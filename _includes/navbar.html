@@ -1,5 +1,21 @@
 <div class="top-header">
-  <input type="text">
+  <div class="container clearfix">
+    <form action="#" class="pull-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Estoy buscando...">
+      </div>
+    </form>
+    <div class="pull-right">
+      <ul class="list-inline">
+        <li><a href="#">Iniciar sesión</a></li>
+        <li><a href="#">Crear cuenta</a></li>
+        <li><a href="#"><span class="cart-icon">3</span>Carrito</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <a href="{{ site.baseurl }}/"><img src="images/logo.png" alt="Biutiko" width="220px"></a>
 </div>
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
@@ -10,10 +26,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="navbar-brand visible-xs" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+        <li><a class="page-link" href="#">Nuevo</a></li>
+        <li><a class="page-link" href="#">Promociones</a></li>
+        <li><a class="page-link" href="#">Ver todo</a></li>
+        <li><a class="page-link" href="#">Cuidado de la piel</a></li>
+        <li><a class="page-link" href="#">Cosméticos</a></li>
+        <li><a class="page-link" href="#">Kits</a></li>
+        <li><a class="page-link" href="#">Biutips</a></li>
+        <li><a class="page-link" href="#">Biutibox</a></li>
         {% for page in site.pages %}
           {% if page.title  and page.categories contains 'navbar' %}
             <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>

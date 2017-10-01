@@ -1,5 +1,185 @@
 ---
-layout: page
+layout: default
 ---
 
-homepage-content
+<div id="home-hero" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#home-hero" data-slide-to="0" class="active"></li>
+    <li data-target="#home-hero" data-slide-to="1"></li>
+    <li data-target="#home-hero" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/placeholders/hero-placeholder.png" alt="...">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#home-hero" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#home-hero" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h3 class="section-title text-center">¡Lo más nuevo!</h3>
+    {% include product-slider.html %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h3 class="text-center">
+      El top
+      <img src="images/bko.png" alt="" class="center-block" width="94">
+    </h3>
+    {% include product-slider.html %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h3 class="section-title text-center">¡Must para ti!</h3>
+    {% include product-slider.html %}
+  </div>
+</div>
+
+<div class="section biukits">
+  <div class="container">
+    <h3 class="section-title text-center">¡Biukits!</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="biukit-info">
+          <h4>KITS PARA PIEL SECA</h4>
+          <p>Envío gratis en ordenes mayores a $300MXN</p>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="biukit-info">
+          <h4>KITS PARA PIEL SECA</h4>
+          <p>Envío gratis en ordenes mayores a $300MXN</p>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section biutips">
+  <div class="container">
+    <h3 class="section-title text-center">¡Biutips!</h3>
+    <div id="biutips-slider" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row">
+            {% include blog-entry.html %}
+            {% include blog-entry.html %}
+            {% include blog-entry.html %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#biutips-slider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#biutips-slider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h3 class="section-title text-center">¡Compra por categoría!</h3>
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="#" class="category-link text-center cuidado-piel">
+          <h4>Cuidado de la Piel</h4>
+          <span class="btn btn-primary btn-sm">Ver Productos</span>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" class="category-link text-center cuidado-piel">
+          <h4>Cuidado de la Piel</h4>
+          <span class="btn btn-primary btn-sm">Ver Productos</span>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" class="category-link text-center cuidado-piel">
+          <h4>Cuidado de la Piel</h4>
+          <span class="btn btn-primary btn-sm">Ver Productos</span>
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="#" class="category-link text-center cuidado-piel">
+          <h4>Cuidado de la Piel</h4>
+          <span class="btn btn-primary btn-sm">Ver Productos</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="subscribe-box">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>SUSCRÍBETE, RECIBE NEWS Y OFERTAS EXCLUSIVAS DE #BIUTIKHUNTER</h4>
+      </div>
+      <div class="col-sm-6">
+        <form action="#" class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+          <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <h3 class="section-title text-center">Nuestras Marcas</h3>
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/etude.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/mizon.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/tony-moly.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/etude.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/mizon.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="images/home/brand-logos/tony-moly.png" alt="" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
+
