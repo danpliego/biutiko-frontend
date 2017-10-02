@@ -9,3 +9,103 @@
   "bootstrap",
   "syntax-highlighting"
 ;
+
+// variables
+
+$pink-light: #FFE8E4;
+$blue-light: #D6EFEF;
+
+// reset
+
+html, body, * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: $font-size-base;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+.input-lg {
+  font-size: 1rem;
+}
+
+// layout
+
+  .top-header {
+    border-top: 3px solid $pink-light;
+    padding-top: 1rem;
+    .navbar-search {
+      position: relative;
+      i {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1;
+      }
+      input {
+        padding-left: 3rem;
+        width: 250px;
+      }
+    }
+    .account-navbar li {
+      padding: 0;
+      a {
+        display: block;
+        padding: .66rem 1.33rem;
+        border-right: 1px solid $gray-lighter;
+      }
+      .cart {
+        padding-left: 3rem;
+        position: relative;
+        border-right: 0;
+      }
+      .cart-icon {
+        display: block;
+        background: url('../images/cart-small.png') no-repeat center center;
+        width: 23px;
+        height: 26px;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        text-align: center;
+        padding-top: 7px;
+        padding-left: 3px;
+      }
+    }
+  }
+
+  // Navbar
+
+  .navbar {
+    margin: 2rem 0 .66rem;
+  }
+  .navbar-collapse {
+      text-align: center;
+  }
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    > li > a {
+      border-bottom: 3px solid transparent;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 1rem;
+      &:hover {
+        border-bottom-color: $gray-lighter;
+      }
+    }
+    > .active > a {
+      border-bottom-color: $pink-light;
+    }
+  }
+
+  // Helper Classes
+
+  .section {
+    padding: 4rem 0 3.5rem;
+    .carousel .panel {
+      margin-bottom: 0;
+    }
+  }
