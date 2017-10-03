@@ -38,12 +38,15 @@ p {
 .input-lg {
   font-size: 1rem;
 }
-.btn {
 
-}
+// Buttons
+
 .btn-sm {
   font-size: .8rem;
   padding: .66rem 1rem;
+}
+.btn-outline {
+  border: 1px solid $brand-primary;
 }
 
 // Helper Classes
@@ -94,6 +97,9 @@ p {
     border-bottom: 2px solid $pink-light;
     &.blue-title {
       border-bottom-color: $blue-light;
+    }
+    &.no-border {
+      border-bottom: 0;
     }
   }
 
