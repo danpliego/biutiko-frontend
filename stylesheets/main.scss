@@ -230,3 +230,22 @@ p {
     }
   }
 }
+
+// Footer
+
+  .footer-nav {
+    background: $brand-primary;
+    color: #fff;
+    li a {
+      @extend .padding-lv2-bottom;
+      display: block;
+      color: #fff;
+      text-transform: initial;
+      letter-spacing: 0;
+    }
+  }
+  .body-footer {
+    background: $brand-primary;
+    border-top: 1px solid $gray-darker;
+    color: #fff;
+  }
