@@ -33,36 +33,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 // Helper Classes
 
-  .unpadding {
-    padding: 0!important;
-  }
-  .unmargin {
-    margin: 0!important;
-  }
-  .padding-lv1-ver {
-    padding: .33rem 0;
-  }
-  .padding-lv2-ver {
-    padding: .66rem 0;
-  }
-  .padding-lv3-ver {
-    padding: 1rem 0;
-  }
+  .unpadding {              padding: 0!important; }
+  .unmargin {               margin: 0!important;  }
+
+  .padding-lv3-ver {        padding: .33rem 0; }
+  .padding-lv3-top {        padding-top: .33rem; }
+  .padding-lv3-bottom {     padding-bottom: .33rem; }
+
+  .padding-lv3-ver {        padding: .66rem 0; }
+  .padding-lv3-top {        padding-top: .66rem; }
+  .padding-lv3-bottom {     padding-bottom: .66rem; }
+
+  .padding-lv3-ver {        padding: 1rem 0; }
+  .padding-lv3-top {        padding-top: 1rem; }
+  .padding-lv3-bottom {     padding-bottom: 1rem; }
+
+  .padding-lv4-ver {        padding: 2rem 0; }
+  .padding-lv4-top {        padding-top: 2rem; }
+  .padding-lv4-bottom {     padding-bottom: 2rem; }
+
   .danger-color {
     color: $brand-danger;
   }
   .info-color {
     color: $brand-info;
   }
+  .shadow-big {
+    box-shadow: 0 10px 20px rgba(0,0,0,.05);
+  }
 
 // Section component
 
   .section {
-    padding: 4rem 0 3.5rem;
+    padding: 4rem 0 5rem;
+    .section-title {
+      margin-bottom: 2.5rem;
+    }
   }
   .section-carousel {
-    padding-top: 4rem;
-    margin-bottom: -1rem;
+    padding: 2rem 0;
     .carousel .panel {
       margin-bottom: 0;
     }
@@ -159,6 +168,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       left: 40%;
     }
   }
+
+// Product
+
   .product-slide {
     .carousel-inner {
       padding: 1.5rem;
@@ -176,16 +188,32 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       }
     }
   }
-
-// Product
-
   .product-card {
     border: 0;
     box-shadow: none;
     &:hover {
-      box-shadow: 0 10px 20px rgba(0,0,0,.05);
+      @extend .shadow-big;
     }
     .product-info:hover, .product-info:focus, .product-info:active {
       text-decoration: none;
     }
   }
+
+// Home
+
+.section-bg {
+  background-image: url('../images/pattern-happy.png');
+  border-bottom: 4px solid #fff;
+  &.biukits {
+    background-color: $blue-light;
+    .section-title {
+      border-bottom-color: $brand-info;
+    }
+  }
+  &.biutips {
+    background-color: $pink-light;
+    .section-title {
+      border-bottom-color: $brand-danger;
+    }
+  }
+}
