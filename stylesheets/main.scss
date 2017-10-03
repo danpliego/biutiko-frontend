@@ -27,8 +27,23 @@ html, body, * {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 0;
 }
+p {
+  text-transform: initial;
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+// Bootstrap Replace
+
 .input-lg {
   font-size: 1rem;
+}
+.btn {
+
+}
+.btn-sm {
+  font-size: .8rem;
+  padding: .66rem 1rem;
 }
 
 // Helper Classes
@@ -36,13 +51,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .unpadding {              padding: 0!important; }
   .unmargin {               margin: 0!important;  }
 
-  .padding-lv3-ver {        padding: .33rem 0; }
-  .padding-lv3-top {        padding-top: .33rem; }
-  .padding-lv3-bottom {     padding-bottom: .33rem; }
+  .padding-lv1-ver {        padding: .33rem 0; }
+  .padding-lv1-top {        padding-top: .33rem; }
+  .padding-lv1-bottom {     padding-bottom: .33rem; }
 
-  .padding-lv3-ver {        padding: .66rem 0; }
-  .padding-lv3-top {        padding-top: .66rem; }
-  .padding-lv3-bottom {     padding-bottom: .66rem; }
+  .padding-lv2-ver {        padding: .66rem 0; }
+  .padding-lv2-top {        padding-top: .66rem; }
+  .padding-lv2-bottom {     padding-bottom: .66rem; }
 
   .padding-lv3-ver {        padding: 1rem 0; }
   .padding-lv3-top {        padding-top: 1rem; }
@@ -72,9 +87,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
   .section-carousel {
     padding: 2rem 0;
-    .carousel .panel {
-      margin-bottom: 0;
-    }
   }
   .section-title {
     display: inline-block;
@@ -171,7 +183,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 // Product
 
-  .product-slide {
+  .items-carousel {
     .carousel-inner {
       padding: 1.5rem;
     }
@@ -187,15 +199,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         left: 35%;
       }
     }
-  }
-  .product-card {
-    border: 0;
-    box-shadow: none;
-    &:hover {
-      @extend .shadow-big;
-    }
-    .product-info:hover, .product-info:focus, .product-info:active {
-      text-decoration: none;
+    .panel {
+      border: 0;
+      box-shadow: none;
+      margin-bottom: 0;
+      &:hover {
+        @extend .shadow-big;
+      }
+      .product-info:hover, .product-info:focus, .product-info:active {
+        text-decoration: none;
+      }
     }
   }
 
