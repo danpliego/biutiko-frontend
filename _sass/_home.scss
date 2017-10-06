@@ -1,0 +1,18 @@
+// Home
+
+.section-bg {
+  background-image: url('../images/pattern-happy.png');
+  border-bottom: 4px solid #fff;
+  &.biukits {
+    background-color: $blue-light;
+    .section-title {
+      border-bottom-color: $brand-info;
+    }
+  }
+  &.biutips {
+    background-color: $pink-light;
+    .section-title {
+      border-bottom-color: $brand-danger;
+    }
+  }
+}

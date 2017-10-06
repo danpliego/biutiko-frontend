@@ -1,0 +1,156 @@
+// Section component
+
+  .section {
+    padding: 4rem 0 5rem;
+    .section-title {
+      margin-bottom: 2.5rem;
+    }
+  }
+  .section-carousel {
+    padding: 2rem 0;
+  }
+  .section-title {
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $pink-light;
+    &.blue-title {
+      border-bottom-color: $blue-light;
+    }
+    &.no-border {
+      border-bottom: 0;
+    }
+  }
+
+// Header
+
+  .top-header {
+    border-top: 3px solid $pink-light;
+    padding-top: 1rem;
+    .navbar-search {
+      position: relative;
+      i {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1;
+      }
+      input {
+        padding-left: 3rem;
+        width: 250px;
+      }
+    }
+    .account-navbar li {
+      padding: 0;
+      a {
+        display: block;
+        padding: .66rem 1.33rem;
+        border-right: 1px solid $gray-lighter;
+      }
+      .cart {
+        padding-left: 3rem;
+        position: relative;
+        border-right: 0;
+      }
+      .cart-icon {
+        display: block;
+        background: url('../images/cart-small.png') no-repeat center center;
+        width: 23px;
+        height: 26px;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        text-align: center;
+        padding-top: 7px;
+        padding-left: 3px;
+      }
+    }
+  }
+  .navbar {
+    margin: 2rem 0 .66rem;
+  }
+  .navbar-collapse {
+      text-align: center;
+  }
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    > li > a {
+      border-bottom: 3px solid transparent;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 1rem;
+      &:hover {
+        border-bottom-color: $gray-lighter;
+      }
+    }
+    > .active > a {
+      border-bottom-color: $pink-light;
+    }
+  }
+
+// Carousel
+
+  .carousel-control {
+    opacity: .9;
+    background: none!important;
+    &:hover, &:focus {
+      color: $gray;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      margin-top: -1.5rem;
+      left: 40%;
+    }
+  }
+
+// Product
+
+  .items-carousel {
+    .carousel-inner {
+      padding: 1.5rem;
+    }
+    .carousel-control {
+      width: 5%;
+      &.left {
+        left: -5%;
+      }
+      &.right {
+        right: -5%;
+      }
+      i {
+        left: 35%;
+      }
+    }
+    .panel {
+      border: 0;
+      box-shadow: none;
+      margin-bottom: 0;
+      &:hover {
+        @extend .shadow-big;
+      }
+      .product-info:hover, .product-info:focus, .product-info:active {
+        text-decoration: none;
+      }
+    }
+  }
+
+// Footer
+
+  .footer-nav {
+    background: $brand-primary;
+    color: #fff;
+    li a {
+      @extend .padding-lv2-bottom;
+      display: block;
+      color: #fff;
+      text-transform: initial;
+      letter-spacing: 0;
+    }
+  }
+  .body-footer {
+    background: $brand-primary;
+    border-top: 1px solid $gray-darker;
+    color: #fff;
+  }

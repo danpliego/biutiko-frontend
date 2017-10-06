@@ -1,0 +1,30 @@
+// Helper Classes
+
+  .unpadding {              padding: 0!important; }
+  .unmargin {               margin: 0!important;  }
+
+  .padding-lv1-ver {        padding: .33rem 0; }
+  .padding-lv1-top {        padding-top: .33rem; }
+  .padding-lv1-bottom {     padding-bottom: .33rem; }
+
+  .padding-lv2-ver {        padding: .66rem 0; }
+  .padding-lv2-top {        padding-top: .66rem; }
+  .padding-lv2-bottom {     padding-bottom: .66rem; }
+
+  .padding-lv3-ver {        padding: 1rem 0; }
+  .padding-lv3-top {        padding-top: 1rem; }
+  .padding-lv3-bottom {     padding-bottom: 1rem; }
+
+  .padding-lv4-ver {        padding: 2rem 0; }
+  .padding-lv4-top {        padding-top: 2rem; }
+  .padding-lv4-bottom {     padding-bottom: 2rem; }
+
+  .danger-color {
+    color: $brand-danger;
+  }
+  .info-color {
+    color: $brand-info;
+  }
+  .shadow-big {
+    box-shadow: 0 10px 20px rgba(0,0,0,.05);
+  }

@@ -1,0 +1,33 @@
+// reset
+
+html, body, * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: $font-size-base;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+p {
+  text-transform: initial;
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+// Bootstrap Reset
+
+.input-lg {
+  font-size: 1rem;
+}
+
+  // Buttons
+
+  .btn-sm {
+    font-size: .8rem;
+    padding: .66rem 1rem;
+  }
+  .btn-outline {
+    border: 1px solid $brand-primary;
+  }
