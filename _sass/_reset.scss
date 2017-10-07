@@ -25,8 +25,12 @@ p {
   // Buttons
 
   .btn-sm {
-    font-size: .8rem;
-    padding: .66rem 1rem;
+    font-size: .9rem;
+    padding: .66rem 1rem .5rem;
+  }
+  .btn-xs {
+    font-size: .7rem;
+    padding: .66rem 1rem .5rem;
   }
   .btn-outline {
     border: 1px solid $brand-primary;

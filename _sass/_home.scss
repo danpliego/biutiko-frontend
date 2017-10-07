@@ -16,3 +16,20 @@
     }
   }
 }
+
+.category-link {
+  position: relative;
+  display: block;
+  .category-content {
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    h4 {
+      background: #fff;
+    }
+    .btn {
+      margin-top: -3.3rem;
+    }
+  }
+}
