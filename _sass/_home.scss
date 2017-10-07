@@ -36,3 +36,19 @@
     }
   }
 }
+
+.subscribe-box {
+  background: $blue-light;
+  border-radius: 50px;
+  overflow: hidden;
+  .subscribe-legend {
+    padding: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  form {
+    background: $brand-primary;
+    padding: .33rem 1rem 1.33rem 1rem;
+  }
+}
