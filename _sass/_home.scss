@@ -20,6 +20,9 @@
 .category-link {
   position: relative;
   display: block;
+  &:hover {
+    @extend .shadow-big;
+  }
   .category-content {
     position: absolute;
     top: 36%;
