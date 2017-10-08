@@ -123,16 +123,19 @@
         left: 35%;
       }
     }
-    .panel {
-      border: 0;
-      box-shadow: none;
-      margin-bottom: 0;
-      &:hover {
-        @extend .shadow-big;
-      }
-      .product-info:hover, .product-info:focus, .product-info:active {
-        text-decoration: none;
-      }
+  }
+
+// Panels
+
+  .panel {
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    &:hover {
+      @extend .shadow-big;
+    }
+    .product-info:hover, .product-info:focus, .product-info:active {
+      text-decoration: none;
     }
   }
 
@@ -175,4 +178,15 @@
       border-bottom: 1px solid #fff;
       color: #fff;
     }
+  }
+
+// Pagination
+
+  .pagination > li > a {
+    border-radius: 50%!important;
+    margin: .33rem;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: .66rem 0 .66rem 1px;
   }
