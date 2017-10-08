@@ -139,7 +139,7 @@
 // Footer
 
   .footer-nav {
-    background: $brand-primary;
+    background: $brand-primary url('../images/pattern.png');
     color: #fff;
     li a {
       @extend .padding-lv2-bottom;
