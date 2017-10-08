@@ -1,0 +1,16 @@
+// Product Results
+
+  .product-filters {
+    .filters-container {
+      background: #fff;
+      padding: 2rem;
+    }
+    .checkbox {
+      margin-right: 1.5rem;
+      label {
+        font-size: 1.1rem;
+        font-weight: 500;
+        @extend .text-normalize;
+      }
+    }
+  }

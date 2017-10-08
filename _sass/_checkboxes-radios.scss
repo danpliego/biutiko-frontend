@@ -1,0 +1,61 @@
+// Radio and checkbox reset //
+
+  input[type="radio"], input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    height: 19px;
+    width: 19px;
+    margin-bottom: -.25em;
+    margin-right: 5px;
+    vertical-align: top;
+    border: 1px solid $brand-primary;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+  input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: none;
+  }
+  input[type="checkbox"]:checked:after, input[type="radio"]:checked:after {
+    content: "\f00c";
+    display: block;
+    font-size: 12px;
+    padding-left: 3px;
+    padding-top: 2px;
+    color: $brand-primary;
+  }
+  input[type="radio"]:checked {
+    background: $brand-primary;
+    &:after {
+      content: "\f111";
+      padding-top: 5px;
+      padding-left: 5.2px;
+      color: #fff;
+      font-size: 8px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    margin-left: -2rem;
+    margin-top: 1px;
+  }
+  .radio label, .checkbox label, .label-control {
+    padding-left: 2rem;
+  }
+  .radio-inline, .checkbox-inline {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .checkbox-tooltip {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+  }

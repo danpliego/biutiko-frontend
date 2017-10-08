@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Quienes Somos
+permalink: /quienes-somos/
 categories: navbar
 ---
 
