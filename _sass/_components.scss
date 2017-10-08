@@ -21,6 +21,30 @@
     }
   }
 
+  .section-bg {
+    background-image: url('../images/pattern-happy.png');
+    border-bottom: 4px solid #fff;
+    &.biukits {
+      background-color: $blue-light;
+      .section-title {
+        border-bottom-color: $brand-info;
+      }
+    }
+    &.biutips {
+      background-color: $pink-light;
+      .section-title {
+        border-bottom-color: $brand-danger;
+      }
+    }
+  }
+  .section-box {
+    background: #fff;
+    margin-top: -4rem;
+    box-shadow: $shadow-big;
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
+
 // Header
 
   .top-header {
