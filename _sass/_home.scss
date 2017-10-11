@@ -8,6 +8,9 @@
     .section-title {
       border-bottom-color: $brand-info;
     }
+    .breadcrumb>.active {
+      color: darken($brand-info, 30%);
+    }
   }
   &.biutips {
     background-color: $pink-light;

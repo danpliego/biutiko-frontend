@@ -32,3 +32,16 @@
   .white-color {
     color: #fff;
   }
+  .purple-color {
+    color: $purple;
+  }
+  .yellow-color {
+    color: $yellow;
+  }
+  .blue-link {
+    @extend .text-normalize;
+    color: darken($brand-info, 20%);
+    &:hover, &:focus, &:active {
+      color: $brand-info;
+    }
+  }

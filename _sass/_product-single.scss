@@ -5,10 +5,29 @@
   }
   .product-gallery {
     position: absolute;
+    padding-right: 1rem;
     .item {
       max-height: 450px;
     }
+    .product-thumbnails .thumb {
+      padding: 1rem .5rem;
+    }
   }
-  .review {
-    padding-bottom: 2rem;
+  .product-info .nav-tabs > li {
+    > a {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 1.1rem;
+      border-bottom: 1px solid transparent;
+      margin: 0 2rem 1.5rem 0;
+      color: darken($brand-info, 20%);
+    }
+    &.active > a {
+      color: $brand-primary;
+      border-bottom-color: $brand-info;
+    }
+  }
+  .write-review {
+    border: 1px solid $brand-primary;
+    padding: 2rem;
   }
